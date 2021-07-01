@@ -1,0 +1,1 @@
+Header_Files References_&_pointers Templates Precompilation Lambdas Auto_keyword Set Maps Vector Array Recursion Smart_Pointers Polymorfism Absctracts Virtual using Enum OOP
