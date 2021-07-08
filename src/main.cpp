@@ -1,8 +1,12 @@
 #include <iostream>
-
-using namespace std;
+template <typename T>
+void LOG(const T &x)
+{
+    std::cout << x << std::endl;
+}
 
 int main()
 {
-    cout << "hello world" << endl;
+    // Siguiente clase ejercicio
+    // Next topics: Headers files, precompiled instructions...
 }
