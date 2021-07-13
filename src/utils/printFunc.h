@@ -4,5 +4,6 @@
 template <typename T>
 void print(T whatever, char finisher = '\n')
 {
-    std::cout << whatever << finisher;
+    using namespace std;
+    cout << whatever << finisher;
 }
