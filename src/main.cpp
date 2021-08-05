@@ -1,7 +1,6 @@
 #include <iostream>
-#include "utils/printFunc.h"
 #include <array>
-#include <algorithm>
+#include "./utils/printFunc.h"
 
 #define DEVMODE 1
 #if DEVMODE
@@ -10,7 +9,7 @@
 #define LOG(x) x
 #endif
 
-bool changeEnough(const std::array<int, 4> &cantidad_monedas, const float debe)
+bool changeEnough(const std::array<int, 4> &cantidad_de_monedas, const float debe)
 {
 
     // Se transforma a centavos para evitar trabajar en floats
@@ -36,7 +35,7 @@ bool changeEnough(const std::array<int, 4> &cantidad_monedas, const float debe)
     for (size_t i = 0; i < 4 && debe_in_cents != 0; i++)
     {
         valor_moneda = valores_moneda[i];
-        qty_de_monedas = cantidad_monedas[i];
+        qty_de_monedas = cantidad_de_monedas[i];
 
         if (debe_in_cents < valor_moneda)
             continue;
