@@ -1,29 +1,22 @@
 #include <iostream>
 #include <string>
-#include <vector>
 #include <unordered_map>
-#include "./utils/printFunc.h"
+using namespace std;
 
-#define DEVMODE 1
-#if DEVMODE
-#define LOG(x) print(x)
-#else
-#define LOG(x) x
-#endif
-
-bool forbbidenLetter(const char forbidden, std::string array_words[], int size)
+template <typename T, int size>
+void printArray(T *arr)
 {
     for (size_t i = 0; i < size; i++)
-        for (auto &&letra : array_words[i])
-            if (letra == forbidden)
-                return false;
-
-    return true;
+    {
+        if (i % 2 != 0)
+            continue;
+        cout << arr[i] << endl;
+    }
 }
 
 int main()
 {
-    std::string arr[] = {"hola", "como", "estas"};
-
-    forbbidenLetter('h', arr, 3);
+    int size = 5;
+    char arrChar[size] = {'a', 'b', 'c', 'd', 'e'};
+    int arrInt[size] = {1, 2, 3, 4, 5};
 }
